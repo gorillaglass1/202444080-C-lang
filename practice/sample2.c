@@ -14,6 +14,7 @@ int main(void){
        
         while (kiosk == 1) //키오스크 영역
         {   
+            printf("\n-----반갑습니다-----\n");
             int order = 10;
             total = 0;
             totalPrice = 0;
@@ -86,7 +87,6 @@ int main(void){
             count += total;
             sales += totalPrice;
             printf("\n총 %d개 제품 %d원입니다. 안녕히가십시오.\n", total, totalPrice);
-            printf("\n-----반갑습니다-----\n");
             
         }
         }
