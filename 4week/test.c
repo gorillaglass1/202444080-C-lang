@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 int main(void){
-    int x = 0; //입력 받는 수 
-    int y = 0;
+    int n = 0; //입력 받는 수 
+    int i = 0;
     int sum = 0;
-    printf("input your number:");
-    scanf("%d", &x);
+    printf("입력하셈\n입력:");
+    scanf("%d", &n);
 
     while (1)
     {
-        if(x % 2 == 0) {
-                sum += y;
+        if(i % 2 == 0) {
+                sum += i;
         }
-        y++;
-        if(x < y) {
+        i++; //for문 증감식부분 ++를 if내부에 넣으면 짝수일 때만 i가 증가하고 무한루프에 빠짐짐
+        if(n <= i) { //for문 조건문의 반대
             break;
         }
-        }
+    }
     
-    
-    printf("\n합계:%d\n", sum);
+    printf("결과:%d\n", sum);
     return 0;
 }
