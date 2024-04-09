@@ -3,11 +3,10 @@
 int main(void){
    int sum = 0;
    int i = 0;
-   for (i = 0; i <=5; i++) {
-    sum += 1;
-    printf ("%d\n", sum);
+   for (i = 0; i <=10; i++) {
+    sum += i;
     i++;
    }
-    printf("%d\n", i);
+    printf("%d\n", sum);
     return 0;
 }
